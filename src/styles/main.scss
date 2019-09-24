@@ -1,0 +1,22 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-main;
+  font-family: $font-primary;
+  color: $font-main;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  box-shadow: $box-shadow-main;
+}
