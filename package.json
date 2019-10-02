@@ -1,14 +1,14 @@
 {
-  "name": "webpack-starter-template",
+  "name": "modern-resume",
   "version": "1.0.0",
   "description": "Simple webpack starter template",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server  --config webpack.dev.js --open",
+    "dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
-    "webpack4, starter, template"
+    "modern, resume, modern resume, modern-resume, eryk słociński resume, erq resume"
   ],
   "author": "Eryk Słociński",
   "license": "ISC",

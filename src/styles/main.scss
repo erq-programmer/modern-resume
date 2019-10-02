@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 *,
 *::before,
@@ -12,11 +13,244 @@ body {
   background-color: $background-main;
   font-family: $font-primary;
   color: $font-main;
+  width: 100%;
+  height: 100%;
 }
 
-div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+.bg-code {
+  width: 100%;
+  margin: 0;
+  height: 30vh;
+  background-image: url('../images/bg.png');
+  filter: blur(1px);
+  background-size: cover;
+  background-position: center center;
   box-shadow: $box-shadow-main;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include for-size(lg-up) {
+    top: 15%;
+  }
+}
+
+header.card-wrapper {
+  width: 100%;
+  box-shadow: $box-shadow-main;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  text-shadow: $font-shadow-main;
+  padding: 20px 0;
+
+  @include for-size(lg-up) {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .resume-card {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include for-size(lg-up) {
+      flex-basis: 50%;
+      padding: 40px 0;
+    }
+
+    .card__header {
+      @include for-size(lg-up) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+      }
+
+      h1.header__title {
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include for-size(md-up) {
+          font-size: 2.5rem;
+        }
+
+        @include for-size(lg-up) {
+          font-size: 3rem;
+        }
+      }
+
+      h2.header__subtitle {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+
+        @include for-size(md-up) {
+          font-size: 1.6rem;
+        }
+
+        @include for-size(lg-up) {
+          font-size: 1.8rem;
+          text-align: left;
+        }
+      }
+    }
+
+    ul.card__links {
+      list-style: none;
+
+      li.card__item {
+        margin: 20px 0;
+
+        a.item__link {
+          color: $white;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          padding: 5px;
+
+          span {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+
+    section.card__social {
+      display: flex;
+      justify-content: space-evenly;
+
+      a.social__link {
+        margin: 0 0.5rem;
+        font-weight: 400;
+        background-color: $secondary;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: $box-shadow-main;
+        position: relative;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $white;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  section.avatar {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto 20px;
+
+    @include for-size(lg-up) {
+      flex-basis: 50%;
+      clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
+      order: 3;
+      margin: 0;
+    }
+
+    img.avatar__image {
+      border-radius: 50%;
+      background-position: center center;
+      background-size: cover;
+      width: 60%;
+      height: 60%;
+
+      @include for-size(lg-up) {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+article.about {
+  margin-top: 40px;
+  background-color: $white;
+  box-shadow: $box-shadow-main;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-size(lg-up) {
+    padding: 20px 0;
+  }
+
+  header.about__header {
+    margin-bottom: 20px;
+
+    h2.header__title {
+      font-size: 2rem;
+      font-weight: 500;
+
+      @include for-size(lg-up) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  p.about__description {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+    letter-spacing: 1px;
+
+    @include for-size(lg-up) {
+      line-height: 2;
+      padding: 0 80px;
+    }
+  }
+
+  section.about__buttons {
+    padding: 20px 0;
+
+    @include for-size(lg-up) {
+      padding: 40px 0 20px;
+      display: flex;
+    }
+
+    a.button__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 10px;
+      font-weight: 500;
+      background-color: $secondary;
+      color: $white;
+      text-decoration: none;
+      border-radius: 35px;
+      padding: 15px 30px;
+      box-shadow: $box-shadow-main;
+      font-size: 1rem;
+
+      @include for-size(lg-up) {
+        line-height: 2;
+        font-size: 1.6rem;
+        margin: 0 10px;
+        padding: 5px 30px;
+      }
+
+      span {
+        margin-right: 10px;
+        color: $white;
+        font-size: 2rem;
+      }
+    }
+  }
 }
