@@ -130,7 +130,6 @@ header.card-wrapper {
 
       a.social__link {
         margin: 0 0.5rem;
-        font-weight: 400;
         background-color: $secondary;
         width: 40px;
         height: 40px;
@@ -183,7 +182,7 @@ article.about {
   margin-top: 40px;
   background-color: $white;
   box-shadow: $box-shadow-main;
-  padding: 20px 0;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,8 +217,6 @@ article.about {
   }
 
   section.about__buttons {
-    padding: 20px 0;
-
     @include for-size(lg-up) {
       padding: 40px 0 20px;
       display: flex;
@@ -229,13 +226,13 @@ article.about {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 20px 10px;
+      margin: 20px 10px 0;
       font-weight: 500;
       background-color: $secondary;
       color: $white;
       text-decoration: none;
       border-radius: 35px;
-      padding: 15px 30px;
+      padding: 10px 30px;
       box-shadow: $box-shadow-main;
       font-size: 1rem;
 
@@ -251,6 +248,206 @@ article.about {
         color: $white;
         font-size: 2rem;
       }
+    }
+  }
+}
+
+section.education {
+  margin: 40px 0;
+  text-align: center;
+
+  header.education__header {
+    margin-bottom: 80px;
+
+    h2.education__title {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  article.education__container {
+    background-color: $white;
+    box-shadow: $box-shadow-main;
+    padding: 40px 10px;
+    border-left: 6px solid $secondary;
+    position: relative;
+
+    span.icon {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: $primary;
+      border-radius: 50%;
+      box-shadow: $box-shadow-main;
+
+      span.fas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        font-size: 1.8rem;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 3px solid $primary;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 3px solid $primary;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 22px;
+      z-index: -1;
+    }
+
+    header.container__header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+
+      h3.header__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      h3.header__subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      p.header__year {
+        color: $secondary;
+        font-weight: 500;
+      }
+    }
+
+    p.specialization,
+    p.description {
+      text-align: left;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+section.experience {
+  margin: 40px 0;
+  text-align: center;
+
+  header.experience__header {
+    margin-bottom: 80px;
+
+    h2.experience__title {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  article.experience__container {
+    background-color: $white;
+    box-shadow: $box-shadow-main;
+    padding: 40px 10px;
+    border-left: 6px solid $secondary;
+    position: relative;
+
+    span.icon {
+      display: block;
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: $primary;
+      border-radius: 50%;
+      box-shadow: $box-shadow-main;
+
+      span.fas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        font-size: 1.8rem;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 3px solid $primary;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 3px solid $primary;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 22px;
+      z-index: -1;
+    }
+
+    header.container__header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+
+      h3.header__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      h3.header__subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      p.header__year {
+        color: $secondary;
+        font-weight: 500;
+      }
+    }
+
+    p.specialization,
+    p.description {
+      text-align: left;
+      line-height: 1.5;
+      letter-spacing: 1px;
     }
   }
 }
