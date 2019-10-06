@@ -256,6 +256,11 @@ section.education {
   margin: 40px 0;
   text-align: center;
 
+  @include for-size(lg-up) {
+    width: 48%;
+    float: left;
+  }
+
   header.education__header {
     margin-bottom: 80px;
 
@@ -269,8 +274,16 @@ section.education {
     background-color: $white;
     box-shadow: $box-shadow-main;
     padding: 40px 10px;
-    border-left: 6px solid $secondary;
     position: relative;
+    width: 100%;
+
+    &--left {
+      border-left: 6px solid $secondary;
+    }
+
+    &--right {
+      border-right: 6px solid $secondary;
+    }
 
     span.icon {
       display: block;
@@ -343,8 +356,8 @@ section.education {
       }
     }
 
-    p.specialization,
-    p.description {
+    p.container__specialization,
+    p.container__description {
       text-align: left;
       line-height: 1.5;
       letter-spacing: 1px;
@@ -355,6 +368,12 @@ section.education {
 section.experience {
   margin: 40px 0;
   text-align: center;
+  @include clearfix;
+
+  @include for-size(lg-up) {
+    width: 48%;
+    float: right;
+  }
 
   header.experience__header {
     margin-bottom: 80px;
@@ -369,8 +388,15 @@ section.experience {
     background-color: $white;
     box-shadow: $box-shadow-main;
     padding: 40px 10px;
-    border-left: 6px solid $secondary;
     position: relative;
+
+    &--left {
+      border-left: 6px solid $secondary;
+    }
+
+    &--right {
+      border-right: 6px solid $secondary;
+    }
 
     span.icon {
       display: block;
@@ -443,8 +469,8 @@ section.experience {
       }
     }
 
-    p.specialization,
-    p.description {
+    p.container__specialization,
+    p.container__description {
       text-align: left;
       line-height: 1.5;
       letter-spacing: 1px;
