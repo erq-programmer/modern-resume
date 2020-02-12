@@ -28,19 +28,19 @@
           <ul class="card__links">
             <li class="card__item">
               <a class="item__link" href="#"
-                ><span class="far fa-envelope" aria-label="Email"></span>
+                ><span class="far fa-envelope" aria-label="My email"></span>
                 erq.programmer@gmail.com</a
               >
             </li>
             <li class="card__item">
               <a class="item__link" href="#"
-                ><span class="fas fa-map-marker-alt" aria-label="Place"></span>
+                ><span class="fas fa-map-marker-alt" aria-label="Birth place"></span>
                 Żory, Poland</a
               >
             </li>
             <li class="card__item">
               <a class="item__link" href="#"
-                ><span class="fas fa-globe" aria-label="Website"></span>
+                ><span class="fas fa-globe" aria-label="My website"></span>
                 http://erykslocinski.dev</a
               >
             </li>
@@ -90,47 +90,61 @@
         </section>
       </article>
 
-      <!-- Section education -->
-      <section class="education">
-        <header class="education__header">
-          <h2 class="education__title">Education</h2>
-        </header>
-        <article class="education__container education__container--left">
-          <span class="icon"
-            ><span class="fas fa-graduation-cap" aria-hidden="true"></span
-          ></span>
-          <header class="container__header">
-            <h3 class="header__title">WSB Academy</h3>
-            <h3 class="header__subtitle">Dąbrowa Górnicza</h3>
-            <p class="header__year">2015-2018</p>
+      <div class="two-column-wrapper">
+        <!-- Section education -->
+        <section class="education">
+          <header class="education__header">
+            <h2 class="education__title">Education</h2>
+            <span class="icon"
+              ><span class="fas fa-graduation-cap" aria-hidden="true"></span
+            ></span>
           </header>
-          <p class="container__specialization">
-            Specialization: Coaching for biznes
-          </p>
-          <p class="container__description">Bachelor's degree</p>
-        </article>
-      </section>
+          <article class="education__container">
+            <header class="container__header">
+              <h3 class="header__title">WSB Academy</h3>
+              <h3 class="header__subtitle">Dąbrowa Górnicza</h3>
+              <p class="header__year">2015-2018</p>
+            </header>
+            <p class="container__specialization">
+              Specialization: Coaching for biznes
+            </p>
+            <p class="container__description">Bachelor's degree</p>
+          </article>
 
-      <!-- Section experience -->
-      <section class="experience">
-        <header class="experience__header">
-          <h2 class="experience__title">Experience</h2>
-        </header>
-        <article class="experience__container experience__container--left">
-          <span class="icon"
-            ><span class="fas fa-mug-hot" aria-hidden="true"></span
-          ></span>
-          <header class="container__header">
-            <h3 class="header__title">Plus & Cyfrowy Polsat</h3>
-            <h3 class="header__subtitle">Pszczyna</h3>
-            <p class="header__year">2016 - present</p>
+          <article class="education__container">
+            <header class="container__header">
+              <h3 class="header__title">ZSB-I im. Mikołaja Kopernika</h3>
+              <h3 class="header__subtitle">Żory</h3>
+              <p class="header__year">2015-2018</p>
+            </header>
+            <p class="container__specialization">
+              Specialization: Coaching for biznes
+            </p>
+            <p class="container__description">Bachelor's degree</p>
+          </article>
+        </section>
+
+        <!-- Section experience -->
+        <section class="experience">
+          <header class="experience__header">
+            <h2 class="experience__title">Experience</h2>
+            <span class="icon"
+              ><span class="fas fa-mug-hot" aria-hidden="true"></span
+            ></span>
           </header>
-          <p class="container__specialization">
-            Specialization: Customer Advisor
-          </p>
-          <p class="container__description">Selling contracts</p>
-        </article>
-      </section>
+          <article class="experience__container">
+            <header class="container__header">
+              <h3 class="header__title">Plus & Cyfrowy Polsat</h3>
+              <h3 class="header__subtitle">Pszczyna</h3>
+              <p class="header__year">2016 - present</p>
+            </header>
+            <p class="container__specialization">
+              Specialization: Customer Advisor
+            </p>
+            <p class="container__description">Selling contracts</p>
+          </article>
+        </section>
+      </div>
 
       <!-- Portfolio section -->
       <section class="portfolio">
@@ -141,26 +155,28 @@
           <!-- Project 1 -->
           <section class="portfolio__container">
             <picture class="container__image">
-              <img src="https://source.unsplash.com/random" alt="" />
+              <img src="images/modern-resume.png" alt="modern resume preview" />
             </picture>
             <article class="container__text">
               <header class="text__header">
-                <h3 class="header__title">Dynamic Homepage</h3>
+                <h3 class="header__title">Modern resume</h3>
               </header>
               <ul class="text__tags">
-                <li class="tags__item">js</li>
+                <li class="tags__item">html</li>
                 <li class="tags__item">scss</li>
+                <li class="tags__item">webpack</li>
+                <li class="tags__item">Adobe XD</li>
               </ul>
               <p class="text__description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laborum, consectetur?
               </p>
               <section class="text__buttons">
-                <a href="#" class="buttons__item"
+                <a href="https://erq-programmer.github.io/modern-resume/" class="buttons__item"
                   ><span class="fas fa-laptop-code" aria-hidden="true"></span
                   >Demo</a
                 >
-                <a href="#" class="buttons__item"
+                <a href="https://github.com/erq-programmer/modern-resume" class="buttons__item"
                   ><span class="fas fa-code" aria-hidden="true"></span>Github</a
                 >
               </section>
@@ -170,15 +186,22 @@
           <!-- Project 2 -->
           <section class="portfolio__container">
             <picture class="container__image">
-              <img src="https://source.unsplash.com/random" alt="" />
+              <img src="images/gatsby-bryzol.png" alt="bryzol catering preview" />
             </picture>
             <article class="container__text">
               <header class="text__header">
-                <h3 class="header__title">Dynamic Homepage</h3>
+                <h3 class="header__title">Bryzol Catering</h3>
               </header>
               <ul class="text__tags">
-                <li class="tags__item">js</li>
-                <li class="tags__item">scss</li>
+                <li class="tags__item">gatsby</li>
+                <li class="tags__item">graphql</li>
+                <li class="tags__item">styled-components</li>
+                <li class="tags__item">storybook</li>
+                <li class="tags__item">husky</li>
+                <li class="tags__item">lint-staged</li>
+                <li class="tags__item">eslint</li>
+                <li class="tags__item">prettier</li>
+                <li class="tags__item">figma</li>
               </ul>
               <p class="text__description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -189,41 +212,13 @@
                   ><span class="fas fa-laptop-code" aria-hidden="true"></span
                   >Demo</a
                 >
-                <a href="#" class="buttons__item"
+                <a href="https://github.com/erq-programmer/gatsby-bryzol" class="buttons__item"
                   ><span class="fas fa-code" aria-hidden="true"></span>Github</a
                 >
               </section>
             </article>
           </section>
 
-          <!-- Project 3 -->
-          <section class="portfolio__container">
-            <picture class="container__image">
-              <img src="https://source.unsplash.com/random" alt="" />
-            </picture>
-            <article class="container__text">
-              <header class="text__header">
-                <h3 class="header__title">Dynamic Homepage</h3>
-              </header>
-              <ul class="text__tags">
-                <li class="tags__item">js</li>
-                <li class="tags__item">scss</li>
-              </ul>
-              <p class="text__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Laborum, consectetur?
-              </p>
-              <section class="text__buttons">
-                <a href="#" class="buttons__item"
-                  ><span class="fas fa-laptop-code" aria-hidden="true"></span
-                  >Demo</a
-                >
-                <a href="#" class="buttons__item"
-                  ><span class="fas fa-code" aria-hidden="true"></span>Github</a
-                >
-              </section>
-            </article>
-          </section>
         </div>
       </section>
 
@@ -268,7 +263,7 @@
                 <input type="text" name="form-topic" id="form-topic" autocomplete="off" required />
                 <label class="label-name" for="form-topic"><span class="content-name">Topic</span></label>
               </p>
-              <li>
+              <li class="textarea-top">
                 <textarea name="text" id="form-text" autocomplete="off" required></textarea>
                 <label class="label-name" for="form-text"><span class="content-name">Text</span></label>
               </p>
