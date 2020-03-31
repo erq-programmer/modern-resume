@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-main;
   font-family: $font-primary;
@@ -118,6 +122,7 @@ header.card-wrapper {
           font-weight: 400;
           padding: 5px;
           transition: color $transition-time $transition-type;
+          outline: none;
 
           &:hover {
             color: $secondary;
@@ -142,6 +147,7 @@ header.card-wrapper {
         border-radius: 50%;
         box-shadow: $box-shadow-main;
         position: relative;
+        outline: none;
         transition: transform $transition-time $transition-type,
           box-shadow $transition-time $transition-type;
 
@@ -277,7 +283,7 @@ article.about {
   display: grid;
 
   @include for-size(lg-up) {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
   }
 }
@@ -491,6 +497,10 @@ section.experience {
       line-height: 1.5;
       letter-spacing: 1px;
     }
+
+    .cursive {
+      font-style: italic;
+    }
   }
 }
 
@@ -518,11 +528,6 @@ section.portfolio {
     width: 100%;
     display: grid;
     grid-row-gap: 40px;
-
-    // @include for-size(lg-up) {
-    //   grid-template-columns: auto auto;
-    //   grid-column-gap: 40px;
-    // }
   }
 
   section.portfolio__container {
@@ -531,13 +536,10 @@ section.portfolio {
     box-shadow: $box-shadow-main;
     padding: 20px;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
 
     @include for-size(lg-up) {
-      flex-direction: row;
+      grid-template-columns: 3fr 2fr;
     }
 
     picture.container__image {
@@ -577,7 +579,7 @@ section.portfolio {
         li.tags__item {
           background-color: $primary;
           color: $white;
-          margin: 0 2px 2px;
+          margin: 0 2px 4px;
           padding: 5px 10px;
           list-style: none;
           font-size: 0.8rem;
@@ -661,7 +663,7 @@ section.contact {
     section.card__social {
       display: flex;
       justify-content: center;
-      padding-top: 20px;
+      padding: 20px 0;
 
       a.social__link {
         margin: 0 0.5rem;
