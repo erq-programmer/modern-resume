@@ -2,5 +2,26 @@
 
 # modern-resume
 
-Hello there! This is my modern resume project. 
-Prototype in AdobeXD.
+Hello there! This is my simple business card website. It was created to help me to get a job as a junior frontend developer.
+
+## Screenshots
+
+![modern-resume screenshot](src/images/modern-resume-preview.png)
+
+## Technologies
+
+- HTML
+- SCSS
+- JS (soon...)
+
+## Status
+
+Project is: _in progress_
+
+To-do list:
+
+- [ ] Need backend for contact form
+
+## Contact
+
+Created by [@erykslocinski](mailto:eryk.slocinski@gmail.com) - feel free to contact me!
