@@ -4,7 +4,7 @@
 
 Hello there! This is my simple business card website. It was created to help me to get a job as a junior frontend developer.
 
-:fire: :fire: **[DEMO](https://bryzol-webpage.netlify.com/)** :fire: :fire:
+:fire: :fire: **[DEMO](https://erq-programmer.github.io/modern-resume/)** :fire: :fire:
 
 ## Screenshots
 
